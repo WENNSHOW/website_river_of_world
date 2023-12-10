@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Регистрация/Вход </title>
+    <link rel="stylesheet" href="styles/style4.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/483/483408.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="container" class="container">
+      <!-- Секция формы -->
+      <div class="row">
+        <!-- Регистрация -->
+        <div class="col align-items-center flex-col sign-up">
+          <div class="form-wrapper align-items-center">
+            <div class="form sign-up">
+              <div class="input-group">
+                <iconify-icon icon="mdi:user" style="color: #a0a0a0;"></iconify-icon>
+                <input id="signup-username" type="text" placeholder="Логин" required>
+              </div>
+              <div class="input-group">
+                <iconify-icon icon="solar:letter-bold-duotone" style="color: #a0a0a0;"></iconify-icon>
+                <input id="signup-email" type="email" placeholder="Почта" required>
+              </div>
+              <div class="input-group">
+                <iconify-icon icon="material-symbols:lock" style="color: #a0a0a0;"></iconify-icon>
+                <input id="signup-password" type="password" placeholder="Пароль" required>
+              </div>
+              <div class="input-group">
+                <iconify-icon icon="material-symbols:lock" style="color: #a0a0a0;"></iconify-icon>
+                <input id="signup-confirm-password" type="password" placeholder="Повторите пароль" required>
+              </div>
+              <input class="but1" type="button" value="Зарегистрироваться" onclick="registerUser()">
+              <p>
+                <span>
+                  Уже есть аккаунт?
+                </span>
+                <b onclick="toggle()" class="pointer">
+                  Войдите здесь
+                </b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- конец регистрации -->
+        <!-- Вход-->
+        <div class="col align-items-center flex-col sign-in">
+          <div class="form-wrapper align-items-center">
+            <div class="form sign-in">
+              <div class="input-group">
+                <iconify-icon icon="mdi:user" style="color: #a0a0a0;"></iconify-icon>
+                <input id="signin-username" type="text" placeholder="Логин" required>
+              </div>
+              <div class="input-group">
+                <iconify-icon icon="material-symbols:lock" style="color: #a0a0a0;"></iconify-icon>
+                <input id="signin-password" type="password" placeholder="Пароль" required>
+              </div>
+              <input class="but1" type="button" value="Войти" onclick="authenticateUser()">
+              <p>
+                <span>
+                  Нет аккаунта?
+                </span>
+                <b onclick="toggle()" class="pointer">
+                  Зарегистрироваться здесь
+                </b>
+              </p>
+            </div>
+          </div>
+          <div class="form-wrapper">
+          </div>
+        </div>
+        <!-- конец входа-->
+      </div>
+      <!-- конец формы  -->
+      <!-- секция контента -->
+      <div class="row content-row">
+        <!--контент входа -->
+        <div class="col align-items-center flex-col">
+          <div class="text sign-in">
+            <h2>
+              Вход <br> в аккаунт
+            </h2>
+          </div>
+          <div class="img sign-in">
+          </div>
+        </div>
+        <!-- конец контента с входом  -->
+        <!-- контент входа -->
+        <div class="col align-items-center flex-col">
+          <div class="img sign-up">
+          </div>
+          <div class="text sign-up">
+            <h2>
+              Регистрация
+            </h2>
+          </div>
+        </div>
+        <!-- конец формы регистрации  -->
+      </div>
+      <!-- конец секции с контентом -->
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="scripts/script3.js"></script>
+  </body>
+</html>

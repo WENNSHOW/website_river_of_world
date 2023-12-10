@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Отзыв</title>
+    <link rel="stylesheet" href="styles/style8.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="question.png" type="image/png">
+  </head>
+  <body>
+    <div class="contain">
+      <div class="wrapper">
+        <div class="contacts">
+          <h3>Наши контакты</h3>
+
+          <ul>
+            <li>Мичуринский проспект д. 13</li>
+            <li>119192 г. Москва</li>
+            <li>vladyr55555@gmail.com</li>
+          </ul>
+        </div>
+
+        <div class="form">
+          <h3>Напишите отзыв</h3>
+          <form name="submit-to-google-sheet">
+            <p>
+              <label for="name">Имя</label>
+              <input id="name" type="text" name="Name">
+            </p>
+            <p>
+              <label for="surname">Фамилия</label>
+              <input id="surname"type="text" name="Surname">
+            </p>
+            <p>
+              <label for="email">Почта</label>
+              <input type="email" name="Email" id="email" required>
+            </p>
+            <p>
+              <label for="head">Заголовок</label>
+              <input id="head"type="text" name="Heading">
+            </p>
+            <p class="full-width">
+              <label for="messeage">Ваше сообщение</label>
+              <textarea name="Review" id="messeage" cols="30" rows="7" ></textarea>
+            </p>
+            <p class="full-width">
+              <button type="submit">Отправить</button>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/script2.js"></script>
+  </body>
+</html>
